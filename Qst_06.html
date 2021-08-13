@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06 da LISTA 01</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+
+        let N_alunos = parseInt(prompt("Digite o total de alunos da turma de Introdução aos Autômatos a Pilha (MAC 414) "));
+        
+         contador = 0
+         Menor_nota = 100
+         Maior_nota = 0
+
+        while(contador < N_alunos){
+            let nota = parseInt(prompt("Digite a nota: de 0 a 100 "))        
+            contador = contador + 1
+            if(Maior_nota < nota){
+                Maior_nota = nota
+            }
+            if(Menor_nota > nota){
+                Menor_nota = nota
+            }
+        }   
+        
+        console.log("A maior nota é: ", Maior_nota)
+        console.log("A menor nota é: ", Menor_nota)
+
+    </script>
+</body>
+</html>
